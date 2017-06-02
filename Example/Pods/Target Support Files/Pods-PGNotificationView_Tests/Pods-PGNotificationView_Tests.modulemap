@@ -1,0 +1,6 @@
+framework module Pods_PGNotificationView_Tests {
+  umbrella header "Pods-PGNotificationView_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

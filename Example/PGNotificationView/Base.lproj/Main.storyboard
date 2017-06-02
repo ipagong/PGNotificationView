@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="PGNotificationView_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAJ-8A-T8U">
+                                <rect key="frame" x="16" y="67" width="343" height="50"/>
+                                <color key="backgroundColor" red="0.99705946450000005" green="0.83557418419999996" blue="0.013893380659999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Xqg-gk-KK0"/>
+                                </constraints>
+                                <state key="normal" title="Hello, Man, yellow notification"/>
+                                <connections>
+                                    <action selector="onClickFirst:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="kAp-sK-emE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqs-tH-sWs">
+                                <rect key="frame" x="16" y="137" width="343" height="50"/>
+                                <color key="backgroundColor" red="0.99705946450000005" green="0.83557418419999996" blue="0.013893380659999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="I2a-SY-8sd"/>
+                                </constraints>
+                                <state key="normal">
+                                    <string key="title">second notification AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</string>
+                                </state>
+                                <connections>
+                                    <action selector="onClickSecond:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="KwV-GF-QGe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mAk-Yy-XH5">
+                                <rect key="frame" x="16" y="214" width="343" height="50"/>
+                                <color key="backgroundColor" red="0.99705946450000005" green="0.83557418419999996" blue="0.013893380659999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="uDJ-UI-rH0"/>
+                                </constraints>
+                                <state key="normal" title="one two three, one two three, mic test"/>
+                                <connections>
+                                    <action selector="onClickThird:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Rut-7g-JLP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhm-Mu-NWh">
+                                <rect key="frame" x="16" y="287" width="343" height="50"/>
+                                <color key="backgroundColor" red="0.99705946450000005" green="0.83557418419999996" blue="0.013893380659999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="QKC-0u-OAL"/>
+                                </constraints>
+                                <state key="normal" title="bye. ipagong.dev@gmail.com"/>
+                                <connections>
+                                    <action selector="onClickLast:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Wjz-sn-M7b"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="YAJ-8A-T8U" secondAttribute="leading" id="0Fa-UF-t8F"/>
+                            <constraint firstItem="mAk-Yy-XH5" firstAttribute="top" secondItem="iqs-tH-sWs" secondAttribute="bottom" constant="27" id="2xS-vY-l5f"/>
+                            <constraint firstItem="YAJ-8A-T8U" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="47" id="9DL-Vx-yJm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YAJ-8A-T8U" secondAttribute="trailing" id="EqQ-Ln-DrT"/>
+                            <constraint firstItem="iqs-tH-sWs" firstAttribute="top" secondItem="YAJ-8A-T8U" secondAttribute="bottom" constant="20" id="FvO-l2-ohD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mAk-Yy-XH5" secondAttribute="trailing" id="Tst-S9-cNF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mAk-Yy-XH5" secondAttribute="trailing" id="Wbs-wN-yfl"/>
+                            <constraint firstItem="dhm-Mu-NWh" firstAttribute="top" secondItem="mAk-Yy-XH5" secondAttribute="bottom" constant="23" id="b4n-iT-YMF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iqs-tH-sWs" secondAttribute="trailing" id="d4H-6M-5Aq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dhm-Mu-NWh" secondAttribute="trailing" id="ilX-VG-UOF"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="iqs-tH-sWs" secondAttribute="leading" id="mJp-CT-tIp"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="mAk-Yy-XH5" secondAttribute="leading" id="vlC-P5-y6b"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="dhm-Mu-NWh" secondAttribute="leading" id="y5e-Xh-4S1"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="36.431784107946029"/>
+        </scene>
+    </scenes>
+</document>

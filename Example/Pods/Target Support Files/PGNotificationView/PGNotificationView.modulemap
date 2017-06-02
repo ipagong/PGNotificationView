@@ -1,0 +1,6 @@
+framework module PGNotificationView {
+  umbrella header "PGNotificationView-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'PGNotificationView_Example' do
+  pod 'PGNotificationView', :path => '../'
+
+  target 'PGNotificationView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
