@@ -10,15 +10,7 @@ Pod::Spec.new do |s|
   s.name             = 'PGNotificationView'
   s.version          = '0.2.0'
   s.summary          = 'Simple NotificationView Creator'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = you can create NotificationView(inApp) simply and you setup the NotificationView(inApp) easily.
-
+  s.description      = 'you can create NotificationView(inApp) simply and you setup the NotificationView(inApp) easily.'
   s.homepage         = 'https://github.com/ipagong/PGNotificationView'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'ipagong.dev' => 'ipagong.dev@gmail.com' }
