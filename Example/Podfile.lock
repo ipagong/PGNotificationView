@@ -1,0 +1,16 @@
+PODS:
+  - PGNotificationView (0.1.0)
+
+DEPENDENCIES:
+  - PGNotificationView (from `../`)
+
+EXTERNAL SOURCES:
+  PGNotificationView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  PGNotificationView: a4ac1a9835cfd7ffc8108073156da0629e944a6e
+
+PODFILE CHECKSUM: 863f9987d56e9e5a0957e6c4ebbbe02400edd81f
+
+COCOAPODS: 1.2.1

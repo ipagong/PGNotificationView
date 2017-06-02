@@ -1,0 +1,22 @@
+{
+  "name": "PGNotificationView",
+  "version": "0.1.0",
+  "summary": "A short description of PGNotificationView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/ipagong/PGNotificationView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ipagong.dev": "ipagong.dev@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/ipagong/PGNotificationView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "PGNotificationView/Classes/**/*"
+}
