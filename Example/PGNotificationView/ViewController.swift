@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     @IBAction func onClickSecond(_ button: UIButton) {
         self.hideAll()
         NotificationView.create(NotiView(button.titleLabel!.text!)).setupDuration(present: 0.3, dismiss: 0.3, expose: 3)
-            .whenCompletion { view in
+            .whenCompletion { completed in
                 print("hide completion.")
             }
             .show()

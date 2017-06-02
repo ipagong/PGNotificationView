@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PGNotificationView'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of PGNotificationView.'
+  s.version          = '0.2.0'
+  s.summary          = 'Simple NotificationView Creator'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,26 +17,15 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = you can create NotificationView(inApp) simply and you setup the NotificationView(inApp) easily.
 
   s.homepage         = 'https://github.com/ipagong/PGNotificationView'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'ipagong.dev' => 'ipagong.dev@gmail.com' }
   s.source           = { :git => 'https://github.com/ipagong/PGNotificationView.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'PGNotificationView/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'PGNotificationView' => ['PGNotificationView/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
