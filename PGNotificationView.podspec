@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PGNotificationView'
-  s.version          = '0.2.0'
+  s.version          = '0.2.1'
   s.summary          = 'Simple NotificationView Creator'
   s.description      = 'you can create NotificationView(inApp) simply and you setup the NotificationView(inApp) easily.'
   s.homepage         = 'https://github.com/ipagong/PGNotificationView'
