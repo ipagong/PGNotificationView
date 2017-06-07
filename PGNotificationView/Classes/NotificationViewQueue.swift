@@ -28,9 +28,9 @@ open class NotificationViewQueue {
     }
     
     func findAll(_ contentView:UIView.Type) -> [NotificationView]? {
-        return views.filter{
+        return views.filter {
             guard let content = $0.contentView else { return false }
             return type(of:content) == contentView
-            }
+        }
     }
 }

@@ -18,10 +18,13 @@ open class NotificationView: UIWindow {
     public typealias TouchClosure = (UIView?) -> ()
     public typealias CompletedClosure = (Bool) -> ()
     
+    public var delayDuration:TimeInterval = 0
     public var exposeDuration:TimeInterval = 2
     
     public var presentDuration:TimeInterval = 0.3
     public var dismissDuration:TimeInterval = 0.3
+    
+    fileprivate var canDisplay:Bool = true
     
     public var touchClosure:TouchClosure?
     public var completionClosure:CompletedClosure?
@@ -81,14 +84,17 @@ extension NotificationView {
 extension NotificationView {
     
     public func show() {
-        guard let _ = self.contentView else  { return }
-        guard self.isHidden == true else { return }
+        guard let _ = self.contentView else { return }
+        guard self.canDisplay == true  else { return }
+        guard self.isHidden == true    else { return }
         
         self.makeKeyAndVisible()
         self.isHidden = false
         self.frame = CGRect(x: 0, y: -self.bounds.height, width: self.bounds.width, height: self.bounds.height)
         
         UIView.animate(withDuration: self.presentDuration,
+                       delay: self.delayDuration,
+                       options: [],
                        animations: {
                         if let sender = self.contentView as? NotificationViewProtocol { sender.didShow() }
                         self.frame = CGRect(x: 0, y: 0, width: self.bounds.width, height: self.bounds.height)
@@ -100,7 +106,7 @@ extension NotificationView {
     }
     
     public func hide(animated:Bool = true, completed:Bool = true) {
-        guard let _ = self.contentView else  { return }
+        self.canDisplay = false
         guard self.isHidden == false else { return }
         
         UIView.animate(withDuration: animated ? self.dismissDuration : 0,
@@ -138,11 +144,13 @@ extension NotificationView {
     @discardableResult
     public func setupDuration(present:TimeInterval = TimeInterval.infinity,
                               dismiss:TimeInterval = TimeInterval.infinity,
+                              delay:TimeInterval   = TimeInterval.infinity,
                               expose:TimeInterval  = TimeInterval.infinity) -> NotificationView {
         guard let _ = self.contentView else  { return self }
         
         if (present != TimeInterval.infinity) { self.presentDuration = present }
         if (dismiss != TimeInterval.infinity) { self.dismissDuration = dismiss }
+        if (delay   != TimeInterval.infinity) { self.delayDuration   = delay   }
         if (expose  != TimeInterval.infinity) { self.exposeDuration  = expose  }
         
         return self
