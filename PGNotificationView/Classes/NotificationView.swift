@@ -19,7 +19,7 @@ open class NotificationView: UIWindow {
     public typealias CompletedClosure = (Bool) -> ()
     
     public var delayDuration:TimeInterval = 0
-    public var exposeDuration:TimeInterval = 2
+    public var exposeDuration:TimeInterval = .infinity
     
     public var presentDuration:TimeInterval = 0.3
     public var dismissDuration:TimeInterval = 0.3
@@ -43,7 +43,7 @@ open class NotificationView: UIWindow {
         debugPrint("NotificationView deinit.")
     }
     
-    func tapped(_ gesture:UITapGestureRecognizer) {
+    @objc func tapped(_ gesture:UITapGestureRecognizer) {
         guard let _ = self.contentView else  { return }
         
         self.hide(animated:false)
