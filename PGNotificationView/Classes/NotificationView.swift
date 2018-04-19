@@ -19,7 +19,7 @@ open class NotificationView: UIWindow {
     public typealias CompletedClosure = (Bool) -> ()
     
     public var delayDuration:TimeInterval = 0
-    public var exposeDuration:TimeInterval = .infinity
+    public var exposeDuration:TimeInterval = 2
     
     public var presentDuration:TimeInterval = 0.3
     public var dismissDuration:TimeInterval = 0.3
